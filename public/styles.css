@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
@@ -10,31 +10,34 @@ body {
   }
   
   .container {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     background-color: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     overflow: hidden;
     text-align: center;
+    padding: 20px;
   }
   
   .header {
+    font-family: 'Pacifico', cursive;
     background-color: #4CAF50;
     color: #fff;
-    padding: 30px;
-    font-size: 48px;
+    padding: 40px;
+    font-size: 56px;
     font-weight: bold;
     margin: 0;
     border-bottom: 4px solid #388E3C;
   }
   
   .task-form {
-    padding: 20px;
+    margin-bottom: 20px;
   }
   
   .task-input {
     padding: 15px;
-    font-size: 18px;
+    font-size: 20px;
     border: 2px solid #4CAF50;
     border-radius: 8px;
     outline: none;
@@ -68,16 +71,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  li:last-child {
-    border-bottom: none;
-  }
-  
-  .completed {
-    text-decoration: line-through;
-    color: #888;
   }
   
   .delete-button {
