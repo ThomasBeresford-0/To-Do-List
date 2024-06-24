@@ -1,12 +1,12 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Updated main font */
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Changed to min-height for responsiveness */
   }
   
   .container {
@@ -16,36 +16,35 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     overflow: hidden;
-    text-align: center;
-    padding: 20px;
+    text-align: center; /* Center align contents */
+    margin-top: 50px; /* Adjusted margin-top for spacing */
   }
   
   .header {
-    font-family: 'Pacifico', cursive;
+    font-size: 36px; /* Adjusted font size */
+    font-weight: bold;
     background-color: #4CAF50;
     color: #fff;
-    padding: 40px;
-    font-size: 56px;
-    font-weight: bold;
+    padding: 20px;
     margin: 0;
     border-bottom: 4px solid #388E3C;
   }
   
   .task-form {
-    margin-bottom: 20px;
+    padding: 20px;
   }
   
   .task-input {
     padding: 15px;
-    font-size: 20px;
+    font-size: 16px; /* Adjusted font size */
     border: 2px solid #4CAF50;
     border-radius: 8px;
     outline: none;
   }
   
-  .add-button {
-    padding: 15px 30px;
-    font-size: 18px;
+  .add-button, .delete-button {
+    padding: 10px 20px; /* Smaller padding for delete button */
+    font-size: 16px;
     background-color: #4CAF50;
     color: #fff;
     border: none;
@@ -54,7 +53,7 @@ body {
     transition: background-color 0.3s ease;
   }
   
-  .add-button:hover {
+  .add-button:hover, .delete-button:hover {
     background-color: #388E3C;
   }
   
@@ -62,29 +61,5 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  
-  li {
-    padding: 20px;
-    border-bottom: 2px solid #ddd;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .delete-button {
-    background-color: #E53935;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .delete-button:hover {
-    background-color: #C62828;
   }
   
